@@ -43,7 +43,7 @@ pipeline {
         }
         stage('Approve To Destroy') {
             steps {
-                input message: 'Approve to Destroy', ok: Destroy
+                input message: 'Approve to Destroy', ok: 'Destroy'
             }
         }
         stage('Terraform Destroy') {
