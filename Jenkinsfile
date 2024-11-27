@@ -7,4 +7,11 @@ pipeline {
             }
         }
     }
+        stage('Terraform Version') {
+            steps {
+                script {
+                    sh 'terraform version'
+                }
+            }
+        }
 }
