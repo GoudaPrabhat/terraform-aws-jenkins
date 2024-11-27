@@ -6,7 +6,6 @@ pipeline {
                 git branch: 'prod' , credentialsId: 'git-cred', url: 'https://github.com/bkrrajmali/terraform-aws-evening-jenkins.git'
             }
         }
-    }
         stage('Terraform Version') {
             steps {
                 script {
@@ -14,4 +13,5 @@ pipeline {
                 }
             }
         }
+    }
 }
