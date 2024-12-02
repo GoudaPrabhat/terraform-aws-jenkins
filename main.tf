@@ -9,7 +9,7 @@ terraform {
 
 provider "aws" {
   # Configuration options
-  region = "us-east-1"
+  region = "us-east-2"
 }
 
 resource "aws_vpc" "myvpc" {
@@ -71,7 +71,7 @@ resource "aws_instance" "myec2" {
   ami                         = "ami-0166fe664262f664c"
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.mysubnet.id
-  key_name                    = "AWSHYD"
+  key_name                    = "NEWPROJECTKEY"
   vpc_security_group_ids      = [aws_security_group.my-sg.id]
   associate_public_ip_address = true
   user_data                   = <<EOF

@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout From Git') {
             steps {
-                git branch: 'prod' , credentialsId: 'git-cred', url: 'https://github.com/bkrrajmali/terraform-aws-evening-jenkins.git'
+                git branch: 'prod' , credentialsId: 'git-cred', url: 'https://https://github.com/GoudaPrabhat/terraform-aws-jenkins.git'
             }
         }
         stage('Terraform Version') {
