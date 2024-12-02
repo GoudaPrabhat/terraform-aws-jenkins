@@ -68,7 +68,7 @@ resource "aws_security_group" "my-sg" {
 }
 
 resource "aws_instance" "myec2" {
-  ami                         = "ami-0166fe664262f664c"
+  ami                         = "ami-0c80e2b6ccb9ad6d1"
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.mysubnet.id
   key_name                    = "NEWPROJECTKEY"
